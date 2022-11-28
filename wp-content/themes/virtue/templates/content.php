@@ -35,8 +35,8 @@
                     ?>
                     <div class="col-md-12">
                         <div class="imghoverclass img-margin-center" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                            <a href="<?php the_permalink()  ?>" title="<?php the_title_attribute(); ?>">
-                                <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" alt="<?php the_title_attribute(); ?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>" itemprop="contentUrl"  class="<?php echo esc_attr( $img[ 'class' ] );?>" <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?>>
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                                <!-- <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" alt="<?php the_title_attribute(); ?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>" itemprop="contentUrl"  class="<?php echo esc_attr( $img[ 'class' ] );?>" <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?>> -->
                                     <meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
                                     <meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
                                     <meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">

@@ -13,6 +13,44 @@ function virtue_lang_setup() {
 }
 add_action( 'after_setup_theme', 'virtue_lang_setup' );
 
+/**
+ * add plugin
+ */
+if(!function_exists('setTheme')) {
+  /**
+   * load plugins supported by wordpress
+   * @param function setTheme
+   * @return add_action(init, setTheme)
+   */
+  function setTheme() {
+    /**
+     * add post thumbnail
+     */
+    add_theme_support('post-thumbnails');
+    /**
+     * add title tag automatic
+     */
+    add_theme_support('title-tag');
+    /**
+     * plugin add sidebar into footer.php
+     */
+    register_sidebar(array(
+      'name' => 'footer nav',
+      'id' => 'navbar-footer',
+      'description'    => '',
+      'class'          => 'page-item-link',
+      'before_widget'  => '',
+      'after_widget'   => '',
+      'before_title'   => '',
+      'after_title'    => '',
+      'before_sidebar' => '',
+      'after_sidebar'  => '',
+    ));
+  }
+  add_action('init', 'setTheme');
+}
+
+
 /*
  * Init Theme Options
  */
