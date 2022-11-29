@@ -86,7 +86,6 @@ global $virtue;
 			<div id="mobile-nav-trigger" class="nav-trigger">
 				<button class="nav-trigger-case mobileclass collapsed" data-toggle="collapse" data-target=".kad-nav-collapse">
 					<span class="kad-navbtn"><i class="icon-reorder"></i></span>
-					<span class="kad-menu-name"><?php esc_html_e( 'Menu', 'virtue' ); ?></span>
 				</button>
 			</div>
 			<div id="kad-mobile-nav" class="kad-mobile-nav">
