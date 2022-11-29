@@ -35,16 +35,14 @@ do_action( 'virtue_single_post_begin' );
 				
 				</header>
 
-				<div class="entry-content" itemprop="articleBody">
+				<div class="entry-content" itemprop="articleBody">          
 					<?php
-					do_action( 'virtue_single_post_content_before' );
-                        
-						the_content(); 
-                      
-					do_action( 'virtue_single_post_content_after' );
+            do_action( 'virtue_single_post_content_before' );
+            echo  "<p>Money Exchange</p>";
+            the_content();                     
+            do_action( 'virtue_single_post_content_after' );
 					?>
 				</div>
-
 				<footer class="single-footer">
 				<?php 
 					/**
