@@ -8524,7 +8524,9 @@ html[xmlns] .slides {
 
 .img-margin-center img {
   margin-right: auto;
-  margin-left: auto
+  margin-left: auto;
+  width: 300px;
+  height: auto;
 }
 
 p.kad_comments_link {
@@ -8864,6 +8866,14 @@ body {
 .entry-content p[style^=font-size] {
   line-height: 1.4
 }
+.entry-content p {
+  margin-bottom: 25px;
+  font-size: 24px;
+  background-color: #1d007d;
+  line-height: 50px;
+  color: #fff;
+  margin: 34px 0;
+}
 
 .has-small-font-size {
   line-height: 1.8
@@ -9008,7 +9018,10 @@ figure.wp-block-audio.aligncenter {
 
 .wp-block-image img {
   border: 0;
-  margin: 0
+  margin: 0;
+  width: 50%;
+  height: auto;
+  float: right;
 }
 
 .wp-block-image .aligncenter img {
@@ -9025,7 +9038,9 @@ figure.wp-block-audio.aligncenter {
 }
 
 .entry-content p {
-  margin-bottom: 16px
+  margin-bottom: 16px;
+  padding-left: 10px;
+  font-weight: 700;
 }
 
 .entry-content p.has-drop-cap:first-letter {
@@ -11021,7 +11036,7 @@ input[type=submit].button:hover {
 }
 
 .single-article #respond {
-  max-width: 848px
+  max-width: 100%
 }
 
 #comments h5.media-heading {
@@ -14731,4 +14746,25 @@ div#thelogo {
 }
 div#content {
   margin-top: 80px;
+}
+iframe {
+  /* margin-left: 11px; */
+  width: 100%;
+}
+.entry-content-homepage {
+
+}
+h2.entry-title {
+  margin-left: 24px;
+}
+.btn {
+  margin: 24px 0 24px 40%;
+  background: #1d007d;
+}
+.btn span {
+   color: #fff;
+   padding: 14px;
+}
+.main.col-lg-9.col-md-8 {
+  width: 100%;
 }

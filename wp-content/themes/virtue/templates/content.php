@@ -33,14 +33,18 @@
                 	$image_id = get_post_thumbnail_id( $post->ID );
                 	$img = virtue_get_image_array( $slidewidth, $slideheight, true, 'iconhover', null, $image_id, true );
                     ?>
+                     <header>                    
+                        <h2 class="entry-title" itemprop="name headline">
+                            <?php the_title(); ?> 
+                        </h2>                  
+                        <?php get_template_part('templates/entry', 'meta-subhead'); ?>    
+                    </header>
                     <div class="col-md-12">
-                        <div class="imghoverclass img-margin-center" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                            <a href="<?php the_permalink()  ?>" title="<?php the_title_attribute(); ?>">
-                                <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" alt="<?php the_title_attribute(); ?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>" itemprop="contentUrl"  class="<?php echo esc_attr( $img[ 'class' ] );?>" <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?>>
-                                    <meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
-                                    <meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
-                                    <meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">
-                            </a> 
+                        <div class="imghoverclass img-margin-center" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">                           
+                            <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" alt="<?php the_title_attribute(); ?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>" itemprop="contentUrl"  class="<?php echo esc_attr( $img[ 'class' ] );?>" <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?>>
+                            <meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
+                            <meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
+                            <meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">                           
                         </div>
                     </div>
                     <?php
@@ -52,20 +56,24 @@
 					$textsize = 'col-md-8';
 					$featsize = 'col-md-4';
 				}
-                $image_id = get_post_thumbnail_id( $post->ID );
+            $image_id = get_post_thumbnail_id( $post->ID );
             	$img = virtue_get_image_array( $portraitwidth, $portraitheight, true, 'iconhover', null, $image_id, true );
               	?>
+                 <header>                   
+                    <h2 class="entry-title" itemprop="name headline">
+                        <?php the_title(); ?> 
+                    </h2>                   
+                    <?php get_template_part('templates/entry', 'meta-subhead'); ?>    
+                </header>
                 <div class="<?php echo esc_attr( $featsize ); ?> post-image-container">
-                    <div class="imghoverclass img-margin-center" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                        <a href="<?php the_permalink()  ?>" title="<?php the_title_attribute(); ?>">
-                            <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" alt="<?php the_title_attribute(); ?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>" itemprop="contentUrl"   class="<?php echo esc_attr( $img[ 'class' ] );?>" <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?>>
-								<meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
-								<meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
-								<meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">
-                        </a> 
+                    <div class="imghoverclass img-margin-center" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">                       
+                      <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" alt="<?php the_title_attribute(); ?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>" itemprop="contentUrl"   class="<?php echo esc_attr( $img[ 'class' ] );?>" <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?>>
+                      <meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
+                      <meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
+                      <meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">                       
                      </div>
                  </div>
-                    <?php
+              <?php
             } elseif($postsummery == 'slider_landscape') {
                 $textsize = 'col-md-12'; ?>
                 <div class="col-md-12">
@@ -82,9 +90,9 @@
                                             <li>
                                                 <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
                                                     <img src="<?php echo esc_url( $img[ 'src' ] ); ?>" itemprop="contentUrl" alt="<?php echo esc_attr( $img[ 'alt' ] );?>" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>"  <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?> />
-													<meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
-													<meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
-													<meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">
+                                                  <meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
+                                                  <meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
+                                                  <meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">
                                             </a>
                                         </li>
                                     <?php 
@@ -116,9 +124,9 @@
                                             <li>
                                                 <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
                                                     <img src="<?php echo  esc_url( $img[ 'src' ] ); ?>" alt="<?php echo esc_attr( $img[ 'alt' ] );?>" itemprop="contentUrl" width="<?php echo esc_attr( $img[ 'width' ] );?>" height="<?php echo esc_attr( $img[ 'height' ] );?>"  <?php echo wp_kses_post(  $img[ 'srcset' ] ); ?> />
-													<meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
-													<meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
-													<meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">
+                                                    <meta itemprop="url" content="<?php echo esc_url( $img[ 'src' ] ); ?>">
+                                                    <meta itemprop="width" content="<?php echo esc_attr( $img[ 'width' ] )?>">
+                                                    <meta itemprop="height" content="<?php echo esc_attr( $img[ 'height' ] )?>">
                                                 </a>
                                             </li>
                                         <?php 
@@ -149,7 +157,7 @@
 
 							echo do_shortcode( wp_kses( get_post_meta( $post->ID, '_kad_post_video', true ), $allowed_tags ) );
 							?>
-                        </div>
+                  </div>
                     </div>
                     <?php if (has_post_thumbnail( $post->ID ) ) { 
                         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
@@ -166,24 +174,28 @@
             } ?>
 
             <div class="<?php echo esc_attr( $textsize );?> post-text-container postcontent">
-                <?php get_template_part('templates/post', 'date'); ?> 
-                <header>
-                    <a href="<?php the_permalink() ?>">
-                        <h2 class="entry-title" itemprop="name headline">
-                            <?php the_title(); ?> 
-                        </h2>
-                    </a>
-                    <?php get_template_part('templates/entry', 'meta-subhead'); ?>    
-                </header>
+             
                 <div class="entry-content" itemprop="description">
-                    <?php 
-                        do_action( 'kadence_post_excerpt_content_before' );
-                        
-                        the_excerpt(); 
-                        
-                        do_action( 'kadence_post_excerpt_content_after' );
-                    ?>
+                    <table border="1">
+                      <tr>
+                          <td>Adress</td> 
+                            <td></td>                         
+                      </tr>                    
+                      <tr>
+                          <td>Business hours</td>  
+                          <td></td>                      
+                      </tr>                     
+                      <tr>
+                          <td>Phone number</td>  
+                          <td></td>                    
+                      </tr>                     
+                  </table>
                 </div>
+                <div class="btn">
+                   <a href="<?php the_permalink() ?>">
+                    <span>Detail Page</span>
+                  </a>
+                </div>                
                 <footer>
                 <?php do_action( 'kadence_post_excerpt_footer' );
                     $tags = get_the_tags(); 
