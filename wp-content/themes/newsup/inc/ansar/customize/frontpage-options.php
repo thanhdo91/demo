@@ -186,7 +186,7 @@ $wp_customize->add_control('show_popular_tags_title',
 //=================================
 $wp_customize->add_section('newsup_flash_posts_section_settings',
     array(
-        'title' => esc_html__('Shops', 'newsup'),
+        'title' => esc_html__('Latest Posts', 'newsup'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',

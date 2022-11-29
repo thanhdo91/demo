@@ -132,7 +132,7 @@ if (!class_exists('Newsup_Tab_Posts')) :
 
 
             // generate the text input for the title of the widget. Note that the first parameter matches text_fields array entry
-            ?><h4><?php _e('Shops', 'newsup'); ?></h4><?php
+            ?><h4><?php _e('Latest Posts', 'newsup'); ?></h4><?php
             echo parent::newsup_generate_text_input('newsup-tabbed-latest-posts-title', __('Title', 'newsup'), __('Latest', 'newsup'));
 
             ?><h4><?php _e('Popular Posts', 'newsup'); ?></h4><?php

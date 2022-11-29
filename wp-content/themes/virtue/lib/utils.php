@@ -95,7 +95,7 @@ function virtue_title() {
     	if ( get_option( 'page_for_posts', true ) ) {
       		$title = get_the_title( get_option( 'page_for_posts', true ) );
     	} else {
-     		$title = __( 'Shops', 'virtue' );
+     		$title = __( 'Latest Posts', 'virtue' );
     	}
   	} elseif ( is_archive() ) {
   		$title = get_the_archive_title();

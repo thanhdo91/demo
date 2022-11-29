@@ -13,7 +13,7 @@ function virtue_author_box() { ?>
 		</li>
 		<li>
 			<a href="#latest">
-				<?php esc_html_e( 'Shops', 'virtue' ); ?>
+				<?php esc_html_e( 'Latest Posts', 'virtue' ); ?>
 			</a>
 		</li>
 	</ul>
