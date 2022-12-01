@@ -94,6 +94,11 @@ function virtue_title() {
   if ( is_home() ) {
     	if ( get_option( 'page_for_posts', true ) ) {
       		$title = get_the_title( get_option( 'page_for_posts', true ) );
+<<<<<<< HEAD
+=======
+    	} else {
+     		$title = __( 'Latest Posts', 'virtue' );
+>>>>>>> 722c02d3300783a297e1904efc5e03f49bb6eccc
     	}
   	} elseif ( is_archive() ) {
   		$title = get_the_archive_title();

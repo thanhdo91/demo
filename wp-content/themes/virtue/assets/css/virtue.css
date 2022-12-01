@@ -319,6 +319,8 @@ p {
   .lead {
     font-size: 21px
   }
+  
+  
 }
 
 small {
@@ -2884,6 +2886,21 @@ table th[class*=col-] {
     overflow-x: scroll;
     border: 1px solid #ddd
   }
+  .sns-content-responsive{
+    width: 100% !important;
+    height: 500px;
+
+  }
+ .comment-respond-resposive {
+  max-width: 100% !important; 
+   bottom: 0 !important;
+
+ }
+ .single-article #respond{
+  display: block;
+  width: 100% !important;
+  margin-top: 0px !important;
+ }
 
   .table-responsive>.table {
     margin-bottom: 0;
@@ -14874,19 +14891,15 @@ h2.entry-title {
 .main.col-lg-9.col-md-8 {
   width: 100%;
 }
-
-.header-slider {
-margin-bottom: 144px;
+#respond {
+  width: 66%;
+  float: left;
+  margin-top: -20.3em;
 }
-
-.change-lang {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 150px;
-}
-
-.flex-box-container {
-  display: flex;
-  justify-content: space-between;
+.sns-content {
+ width:50%;
+ float:right;
+ height:500px;
+ white-space:pre-wrap;
+ overflow:auto;
 }
