@@ -14816,8 +14816,12 @@ form .form-row label.hidden {
   top: 0;
 }
 
-.change-lang>aside {
+.change-lang>aside, .change-lang-mobile>aside {
   display: inline-block !important;
+}
+
+.change-lang-mobile {
+  display: none !important;
 }
 
 .header-height {
@@ -15030,5 +15034,23 @@ h2.entry-title {
     right: 0;
     top: 100%;
     z-index: 1;
+  }
+
+  /* css for lang-btn mobile */
+  .change-lang-mobile {
+    display: block !important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .country-selector.weglot-dropdown ul {
+    top: -100%;
+  }
+  .country-selector.weglot-dropdown .wgcurrent:after {
+    transform: rotate(270deg);
+  }
+  .country-selector.weglot-dropdown input:checked ~ .wgcurrent:after {
+    transform: rotate(180deg);
   }
 }
