@@ -14589,9 +14589,6 @@ form .form-row label.hidden {
 
 @media (max-width:479px) {
   /* css Header responsive Mobile */
-  .flex-center {
-    flex-direction: column;
-  } 
   .text-logo {
     font-size: 10px;
     line-height: 10px;
@@ -14950,8 +14947,13 @@ h2.entry-title {
 }
 
 @media (max-width:504px) {
+  .header-height {
+    height: 100px;
+  }
   .logo-container {
-    width: 80%;
+    width: 85%;
+    height: 100%;
+    display: flex; 
   }
   .widget-container {
     width: 20%;
@@ -14964,5 +14966,13 @@ h2.entry-title {
   }
   .display-mobile {
     display: block !important;
+  }
+  .text-logo {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .text-company {
+    font-size: 10px;
+    line-height: 10px;
   }
 }
