@@ -24300,7 +24300,7 @@ const latest_posts_deprecated_metadata = {
   $schema: "https://schemas.wp.org/trunk/block.json",
   apiVersion: 2,
   name: "core/latest-posts",
-  title: "Shops",
+  title: "Latest Posts",
   category: "widgets",
   description: "Display a list of your most recent posts.",
   keywords: ["recent posts"],
@@ -24774,7 +24774,7 @@ function LatestPostsEdit(_ref) {
   if (!hasPosts) {
     return (0,external_wp_element_namespaceObject.createElement)("div", blockProps, inspectorControls, (0,external_wp_element_namespaceObject.createElement)(external_wp_components_namespaceObject.Placeholder, {
       icon: library_pin,
-      label: (0,external_wp_i18n_namespaceObject.__)('Shops')
+      label: (0,external_wp_i18n_namespaceObject.__)('Latest Posts')
     }, !Array.isArray(latestPosts) ? (0,external_wp_element_namespaceObject.createElement)(external_wp_components_namespaceObject.Spinner, null) : (0,external_wp_i18n_namespaceObject.__)('No posts found.')));
   } // Removing posts from display should be instant.
 
@@ -24878,7 +24878,7 @@ const latest_posts_metadata = {
   $schema: "https://schemas.wp.org/trunk/block.json",
   apiVersion: 2,
   name: "core/latest-posts",
-  title: "Shops",
+  title: "Latest Posts",
   category: "widgets",
   description: "Display a list of your most recent posts.",
   keywords: ["recent posts"],
