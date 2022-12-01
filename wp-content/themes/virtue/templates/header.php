@@ -39,9 +39,6 @@ global $virtue;
     <div class="row flex-center header-height no-margin-tablet">
       <!-- LOGO -->
       <div class="<?php echo esc_attr($logocclass); ?> clearfix kad-header-left logo-container">
-        <div class="change-lang-mobile">
-          <div id="weglot_here"></div>
-        </div>
         <div id="logo" class="logocase">
           <a class="brand logofont" href="<?php echo esc_url(home_url('/')); ?>">
             <div id="thelogo">

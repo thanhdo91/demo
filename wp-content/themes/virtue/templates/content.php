@@ -175,19 +175,19 @@
           $textsize = 'col-md-12 kttextpost';
         } ?>
 
-        <div class="<?php echo esc_attr($textsize); ?> post-text-container postcontent">
+        <div class="<?php echo esc_attr($textsize); ?> post-text-container postcontent postindex-container">
           <div class="entry-content" itemprop="description">
-            <table border="1">
+            <table class="table-container" border="1">
               <tr>
-                <td>Adrress</td>
+                <td class="table-header-text">Adrress</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Business hours</td>
+                <td class="table-header-text">Business hours</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Phone number</td>
+                <td class="table-header-text">Phone number</td>
                 <td></td>
               </tr>
             </table>

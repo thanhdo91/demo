@@ -8488,7 +8488,8 @@ html[xmlns] .slides {
 }
 
 .postlist.fullwidth .col-md-8 .entry-content {
-  padding: 10px 5px
+  padding: 10px 5px;
+  padding-right: 66px;
 }
 
 .postlist.fullwidth .col-md-12 footer {
@@ -9203,7 +9204,11 @@ figure.wp-block-audio.aligncenter {
 }
 
 .footernav {
-  float: right
+  float: left
+}
+
+.footercontent {
+  float: right;
 }
 
 .footernav ul {
@@ -14931,6 +14936,11 @@ h2.entry-title {
   display: none !important;
 }
 
+.table-header-text {
+  width: 200px;
+  background-color: lightgrey;
+}
+
 /* header responsive */
 @media (max-width:991px) {
   .no-margin-tablet {
@@ -14978,6 +14988,15 @@ h2.entry-title {
 }
 
 @media (max-width:504px) {
+  .postlist.fullwidth .col-md-8 .entry-content {
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 20px;
+  }
+  .entry-content table td {
+    width: 200px;
+  }
+
   .container {
     padding-left: 0;
     padding-right: 0;
@@ -15053,4 +15072,61 @@ h2.entry-title {
   .country-selector.weglot-dropdown input:checked ~ .wgcurrent:after {
     transform: rotate(180deg);
   }
+  .country-selector.weglot-dropdown input:checked ~ ul {
+    display: block !important;
+  }
+
+  /* content */
+  .postindex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    margin: 0;
+  }
+}
+
+/* CSS FOOTER */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footernav ul li a {
+  font-size: 12px;
+  color: navy !important;
+}
+
+.footercontent {
+  color: navy;
+  width: 320px;
+  margin: 14px 0 24px 0;
+}
+
+.contact-company {
+  margin-top: 20px;
+}
+
+.contact-company-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footercredits {
+  margin-bottom: 20px;
+}
+
+.footercopyright {
+  padding-bottom: 110px;
+  width: 100%;
+  border-top: 1px solid lightgray;
+}
+
+.copyright-company {
+  margin-top: 10px;
+  color: navy;
+  text-align: center;
+  font-size: 12px;
 }
