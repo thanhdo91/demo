@@ -44,7 +44,7 @@ global $virtue;
             <div id="thelogo">
               <div class="thelogo-top">
                 <img src="<?php echo  IMAGES . '/logoHome.png'; ?>" alt="" class="thelogo-img">
-              </div> 
+              </div>
               <div class="thelogo-bottom">
                 <span class="text-logo">Discount price anywhere in Japan&nbsp;voucher online order site</span>
                 <span class="text-company">ACCESS TICKET</span>
@@ -52,6 +52,35 @@ global $virtue;
             </div>
           </a>
         </div> <!-- Close #logo -->
+        <?php if (has_nav_menu('mobile_navigation')) : ?>
+          <div id="mobile-nav-trigger" class="nav-trigger">
+            <button class="nav-trigger-case mobileclass collapsed display-mobile" data-toggle="collapse" data-target=".kad-nav-collapse">
+              <span class="kad-navbtn"><i class="icon-reorder"></i></span>
+            </button>
+          </div>
+          <div id="kad-mobile-nav" class="kad-mobile-nav display-mobile">
+            <div class="kad-nav-inner mobileclass">
+              <div class="kad-nav-collapse">
+                <?php
+                if (isset($virtue['mobile_submenu_collapse']) && '1' == $virtue['mobile_submenu_collapse']) {
+                  wp_nav_menu(array(
+                    'theme_location' => 'mobile_navigation',
+                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'menu_class'     => 'kad-mnav',
+                    'walker'         => new Virtue_Mobile_Nav_Walker(),
+                  ));
+                } else {
+                  wp_nav_menu(array(
+                    'theme_location' => 'mobile_navigation',
+                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'menu_class'     => 'kad-mnav',
+                  ));
+                }
+                ?>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
       </div><!-- close logo span -->
       <!-- MENU -->
       <div class="<?php echo esc_attr($menulclass); ?> clearfix kad-header-left widget-container">
@@ -62,7 +91,7 @@ global $virtue;
           <button class="nav-trigger-case mobileclass collapsed display-pc" data-toggle="collapse" data-target=".kad-nav-collapse">
             <span class="kad-navbtn"><i class="icon-reorder"></i></span>
           </button>
-          <div id="mobile-nav-trigger" class="nav-trigger">
+          <div id="mobile-nav-trigger" class="nav-trigger display-pc">
             <div id="kad-mobile-nav" class="kad-mobile-nav">
               <div class="kad-nav-inner mobileclass">
                 <div class="kad-nav-collapse">

@@ -89,7 +89,7 @@ pre {
 }
 
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019"
+  quotes: "\201C""\201D""\2018""\2019"
 }
 
 small {
@@ -319,8 +319,8 @@ p {
   .lead {
     font-size: 21px
   }
-  
-  
+
+
 }
 
 small {
@@ -2886,21 +2886,24 @@ table th[class*=col-] {
     overflow-x: scroll;
     border: 1px solid #ddd
   }
-  .sns-content-responsive{
+
+  .sns-content-responsive {
     width: 100% !important;
     height: 500px;
 
   }
- .comment-respond-resposive {
-  max-width: 100% !important; 
-   bottom: 0 !important;
 
- }
- .single-article #respond{
-  display: block;
-  width: 100% !important;
-  margin-top: 0px !important;
- }
+  .comment-respond-resposive {
+    max-width: 100% !important;
+    bottom: 0 !important;
+
+  }
+
+  .single-article #respond {
+    display: block;
+    width: 100% !important;
+    margin-top: 0px !important;
+  }
 
   .table-responsive>.table {
     margin-bottom: 0;
@@ -5744,10 +5747,10 @@ li.sfHover>a>.sf-sub-indicator {
   background: 0 0
 }
 
-#mobile-nav-trigger {
-}
+#mobile-nav-trigger {}
 
-.mobileclass, .mobileclass .kad-nav-collapse{
+.mobileclass,
+.mobileclass .kad-nav-collapse {
   border: none;
   background-color: rgba(255, 255, 255) !important;
 }
@@ -8894,6 +8897,7 @@ body {
 .entry-content p[style^=font-size] {
   line-height: 1.4
 }
+
 .entry-content p {
   margin-bottom: 25px;
   font-size: 24px;
@@ -14359,6 +14363,7 @@ form .form-row label.hidden {
   .kad-header-left:not(.col-md-12) #logo {
     max-width: 100%
   }
+
   .text-company {
     font-size: 12px;
   }
@@ -14588,6 +14593,7 @@ form .form-row label.hidden {
 }
 
 @media (max-width:479px) {
+
   /* css Header responsive Mobile */
   .text-logo {
     font-size: 10px;
@@ -14794,7 +14800,7 @@ form .form-row label.hidden {
 
 /* css HEADER */
 .bg-color {
-  background-color: #1d007d !important;
+  background-color: #000080 !important;
 }
 
 .flex-center {
@@ -14871,11 +14877,10 @@ div#thelogo {
 }
 
 /* css for TABLE */
-.table-rate {
+.table-rate {}
 
-}
-
-.table-rate-content, .table-header {
+.table-rate-content,
+.table-header {
   text-align: center;
 }
 
@@ -14883,34 +14888,39 @@ iframe {
   /* margin-left: 11px; */
   width: 100%;
 }
-.entry-content-homepage {
 
-}
+.entry-content-homepage {}
+
 h2.entry-title {
   margin-left: 24px;
 }
+
 .btn {
   margin: 24px 0 24px 40%;
   background: #1d007d;
 }
+
 .btn span {
-   color: #fff;
-   padding: 14px;
+  color: #fff;
+  padding: 14px;
 }
+
 .main.col-lg-9.col-md-8 {
   width: 100%;
 }
+
 #respond {
   width: 66%;
   float: left;
   margin-top: -20.3em;
 }
+
 .sns-content {
- width:50%;
- float:right;
- height:500px;
- white-space:pre-wrap;
- overflow:auto;
+  width: 50%;
+  float: right;
+  height: 500px;
+  white-space: pre-wrap;
+  overflow: auto;
 }
 
 .display-mobile {
@@ -14922,19 +14932,36 @@ h2.entry-title {
   .no-margin-tablet {
     margin: 0;
   }
-  .logo-container, .widget-container{
+
+  .logo-container,
+  .widget-container {
     width: 50%;
     padding: 0;
   }
+
   .nav-trigger-case {
     position: absolute;
   }
+
   .change-lang {
     left: calc(20% + 4vw);
   }
 }
 
 @media (min-width:580px) and (max-width:700px) {
+  .text-company {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 2px;
+  }
+
+  .text-logo {
+    font-size: 9px;
+    line-height: 10px;
+    padding-left: 0px;
+    letter-spacing: -0.6px;
+  }
+
   .change-lang {
     left: calc(50% - 90px);
   }
@@ -14947,32 +14974,61 @@ h2.entry-title {
 }
 
 @media (max-width:504px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .header-height {
-    height: 100px;
+    height: 70px;
   }
+
   .logo-container {
-    width: 85%;
+    width: 100%;
     height: 100%;
-    display: flex; 
+    display: flex;
+    justify-content: space-between;
   }
-  .widget-container {
-    width: 20%;
+
+  .thelogo-img {
+    padding-right: 40px;
+    padding-left: 10px;
   }
+
+  .thelogo-bottom {
+    display: none;
+  }
+
+  .nav-trigger {
+    padding-right: 5px;
+  }
+
   .change-lang {
     display: none;
   }
+
   .display-pc {
     display: none !important;
   }
+
   .display-mobile {
     display: block !important;
   }
+
   .text-logo {
     font-size: 8px;
     line-height: 10px;
   }
+
   .text-company {
     font-size: 10px;
     line-height: 10px;
+  }
+
+  /* css for mobile button menu */
+  #kad-mobile-nav {
+    right: 0;
+    top: 100%;
+    z-index: 1;
   }
 }
