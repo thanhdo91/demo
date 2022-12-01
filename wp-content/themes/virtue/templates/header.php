@@ -36,9 +36,9 @@ global $virtue;
   }
   ?>
   <div class="container">
-    <div class="row flex-center">
+    <div class="row flex-center header-height no-margin-tablet">
       <!-- LOGO -->
-      <div class="<?php echo esc_attr($logocclass); ?> clearfix kad-header-left">
+      <div class="<?php echo esc_attr($logocclass); ?> clearfix kad-header-left logo-container">
         <div id="logo" class="logocase">
           <a class="brand logofont" href="<?php echo esc_url(home_url('/')); ?>">
             <div id="thelogo">
@@ -54,12 +54,12 @@ global $virtue;
         </div> <!-- Close #logo -->
       </div><!-- close logo span -->
       <!-- MENU -->
-      <div class="<?php echo esc_attr($menulclass); ?> clearfix kad-header-left">
+      <div class="<?php echo esc_attr($menulclass); ?> clearfix kad-header-left widget-container">
         <div class="change-lang">
           <div id="weglot_here"></div>
         </div>
         <?php if (has_nav_menu('mobile_navigation')) : ?>
-          <button class="nav-trigger-case mobileclass collapsed" data-toggle="collapse" data-target=".kad-nav-collapse">
+          <button class="nav-trigger-case mobileclass collapsed display-pc" data-toggle="collapse" data-target=".kad-nav-collapse">
             <span class="kad-navbtn"><i class="icon-reorder"></i></span>
           </button>
           <div id="mobile-nav-trigger" class="nav-trigger">

@@ -5146,6 +5146,7 @@ html .sticky {
 
 #logo {
   margin: auto !important;
+  padding: 0 !important;
 }
 
 .col-md-12>#logo {
@@ -5777,7 +5778,7 @@ li.sfHover>a>.sf-sub-indicator {
 .nav-trigger-case .kad-navbtn {
   display: block;
   float: right;
-  padding: 4px 15px;
+  padding: 3px 15px 4px 15px;
   margin-left: 0;
   margin-right: 0;
   font-size: 20px;
@@ -8852,6 +8853,7 @@ body {
     margin-left: -46vw;
     margin-right: -46vw
   }
+
 }
 
 @media (max-width:767px) {
@@ -14805,17 +14807,27 @@ form .form-row label.hidden {
   flex-wrap: wrap;
 }
 
-/* .flex-button {
-  display: flex;
-  justify-content: flex-end;
-} */
+.change-lang {
+  position: relative;
+  left: 50%;
+  top: 0;
+}
+
+.change-lang>aside {
+  display: inline-block !important;
+}
+
+.header-height {
+  height: 140px;
+}
+
 
 /* css LOGO */
 div#thelogo {
   display: flex;
   flex-direction: column;
   height: auto;
-  max-width: 390px;
+  max-width: 350px;
   max-height: 90px;
   width: 100%;
 }
@@ -14844,7 +14856,7 @@ div#thelogo {
 }
 
 .text-logo {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 12px;
   margin: 0;
   padding: 0;
@@ -14855,7 +14867,7 @@ div#thelogo {
 .text-company {
   font-family: arya;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 12px;
   color: red;
   margin-left: 8px;
@@ -14902,4 +14914,55 @@ h2.entry-title {
  height:500px;
  white-space:pre-wrap;
  overflow:auto;
+}
+
+.display-mobile {
+  display: none !important;
+}
+
+/* header responsive */
+@media (max-width:991px) {
+  .no-margin-tablet {
+    margin: 0;
+  }
+  .logo-container, .widget-container{
+    width: 50%;
+    padding: 0;
+  }
+  .nav-trigger-case {
+    position: absolute;
+  }
+  .change-lang {
+    left: calc(20% + 4vw);
+  }
+}
+
+@media (min-width:580px) and (max-width:700px) {
+  .change-lang {
+    left: calc(50% - 90px);
+  }
+}
+
+@media (min-width:505px) and (max-width:579px) {
+  .change-lang {
+    left: calc(50% - 105px);
+  }
+}
+
+@media (max-width:504px) {
+  .logo-container {
+    width: 80%;
+  }
+  .widget-container {
+    width: 20%;
+  }
+  .change-lang {
+    display: none;
+  }
+  .display-pc {
+    display: none !important;
+  }
+  .display-mobile {
+    display: block !important;
+  }
 }
