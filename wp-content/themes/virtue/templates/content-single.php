@@ -23,22 +23,12 @@ do_action( 'virtue_single_post_begin' );
 			*/
 			do_action( 'virtue_single_post_before_header' );
 			?>
-				<header>
-
-				<?php 
-				/**
-				* @hooked virtue_post_header_title - 20
-				* @hooked virtue_post_header_meta - 30
-				*/
-				do_action( 'virtue_single_post_header' );
-				?>
-				
-				</header>
-
 				<div class="entry-content" itemprop="articleBody">          
 					<?php
             do_action( 'virtue_single_post_content_before' );
+            the_breadcrumb();
             echo  "<p>Money Exchange</p>";
+            do_action( 'virtue_single_post_header' );
             the_content();                     
             do_action( 'virtue_single_post_content_after' );
 					?>
