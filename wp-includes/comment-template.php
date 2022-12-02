@@ -2476,7 +2476,7 @@ function comment_form( $args = array(), $post = null ) {
 		'action'               => site_url( '/wp-comments-post.php' ),
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
-		'class_container'      => 'comment-respond',
+		'class_container'      => 'comment-respond comment-respond-resposive',
 		'class_form'           => 'comment-form',
 		'class_submit'         => 'submit',
 		'name_submit'          => 'submit',
