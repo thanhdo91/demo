@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
   <div class="container">
     <!-- languages -->
     <div class="change-lang-mobile">
-      <div id="weglot_here"></div>
+      <?php echo do_shortcode('[weglot_switcher]')?>
     </div>
     <!-- footer -->
     <div class="row footer-container">
@@ -82,7 +82,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
         <img src="<?php echo  IMAGES . '/logoFooter.jpg'; ?>" alt="" class="thelogo-img">
         <div class="footercontent-contact">
           <p class="contact-company">
-            <span class="contact-company-name">Wakyo Co., Ltd.</span><br>
+            <span class="contact-company-name">Wakyo Co., Ltd.</span>
             Kanagawa Prefectural Public Safety Commission Permit: No. 452760007200
           </p>
         </div>
