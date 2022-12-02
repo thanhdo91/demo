@@ -82,15 +82,15 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
         <img src="<?php echo  IMAGES . '/logoFooter.jpg'; ?>" alt="" class="thelogo-img">
         <div class="footercontent-contact">
           <p class="contact-company">
-            <span class="contact-company-name">株式会社　和僑</span><br>
-            神奈川県公安委員会許可：第452760007200号
+            <span class="contact-company-name">Wakyo Co., Ltd.</span><br>
+            Kanagawa Prefectural Public Safety Commission Permit: No. 452760007200
           </p>
         </div>
       </div>
     </div>
   </div>
   <div class="footercopyright">
-    <p class="copyright-company">© 2010-2021 金券ショップ アクセスチケット</p>
+    <p class="copyright-company">© 2010-2021 Cash voucher shop access ticket</p>
   </div>
 
 </footer>

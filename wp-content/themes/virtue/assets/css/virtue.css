@@ -9209,6 +9209,7 @@ figure.wp-block-audio.aligncenter {
 
 .footercontent {
   float: right;
+
 }
 
 .footernav ul {
@@ -15102,6 +15103,7 @@ h2.entry-title {
   color: navy;
   width: 320px;
   margin: 14px 0 24px 0;
+  align-self: center;
 }
 
 .contact-company {
@@ -15111,7 +15113,7 @@ h2.entry-title {
 .contact-company-name {
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .footercredits {
