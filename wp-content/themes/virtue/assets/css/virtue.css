@@ -15114,6 +15114,7 @@ h2.entry-title {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
+  display: block;
 }
 
 .footercredits {
