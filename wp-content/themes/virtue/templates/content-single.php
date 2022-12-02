@@ -26,8 +26,7 @@ do_action( 'virtue_single_post_begin' );
 				<div class="entry-content" itemprop="articleBody">          
 					<?php
             do_action( 'virtue_single_post_content_before' );
-            the_breadcrumb();
-            echo  "<p>Money Exchange</p>";
+            the_breadcrumb();           
             do_action( 'virtue_single_post_header' );
             the_content();                     
             do_action( 'virtue_single_post_content_after' );

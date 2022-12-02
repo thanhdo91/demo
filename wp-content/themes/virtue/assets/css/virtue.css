@@ -2886,6 +2886,9 @@ table th[class*=col-] {
     overflow-x: scroll;
     border: 1px solid #ddd
   }
+  .entry-title {
+    text-align: center;
+  }
 
   .sns-content-responsive {
     width: 100% !important;
@@ -8906,6 +8909,7 @@ body {
   line-height: 50px;
   color: #fff;
   margin: 34px 0;
+  border-bottom: 6px solid orange;
 }
 
 .has-small-font-size {
@@ -15131,4 +15135,11 @@ h2.entry-title {
   color: navy;
   text-align: center;
   font-size: 12px;
+}
+.shoplogo-detail {
+  width: 100%;
+  height: auto;
+  max-width: 32px;
+  max-height: 32px;
+  margin-right: 5px;
 }
