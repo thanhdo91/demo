@@ -932,8 +932,10 @@ pre code {
 .col2-set,
 .row,
 .row-fluid {
-  margin-left: -15px;
-  margin-right: -15px
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+
 }
 
 .col2-set:after,
@@ -8559,8 +8561,8 @@ html[xmlns] .slides {
 .img-margin-center img {
   margin-right: auto;
   margin-left: auto;
-  width: 300px;
-  height: auto;
+  width: 200px !important;
+  height: 200px !important;
 }
 
 p.kad_comments_link {
@@ -14904,10 +14906,10 @@ iframe {
 }
 
 .entry-content-homepage {}
-
+/* 
 h2.entry-title {
   margin-left: 24px;
-}
+} */
 
 .btn {
   margin: 24px 0 24px 40%;
@@ -15143,4 +15145,7 @@ h2.entry-title {
   max-width: 32px;
   max-height: 32px;
   margin-right: 5px;
+}
+table.table-container{
+  margin-top: -8px;
 }

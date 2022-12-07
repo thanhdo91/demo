@@ -179,16 +179,20 @@
           <div class="entry-content" itemprop="description">
             <table class="table-container" border="1">
               <tr>
-                <td class="table-header-text">Adrress</td>
-                <td></td>
+                <td class="table-header-text">Addrress</td>
+                <td> <?php echo get_post_meta($post->ID, 'addrress', true); ?></td>
               </tr>
               <tr>
                 <td class="table-header-text">Business hours</td>
-                <td></td>
+                <td> <?php echo get_post_meta($post->ID, 'businesshours', true); ?></td>
               </tr>
               <tr>
                 <td class="table-header-text">Phone number</td>
-                <td></td>
+                <td> <?php echo get_post_meta($post->ID, 'phonenumber', true); ?></td>
+              </tr>
+              <tr>
+                <td class="table-header-text">nearest station</td>
+                <td> <?php echo get_post_meta($post->ID, 'neareststation', true); ?></td>
               </tr>
             </table>
           </div>
