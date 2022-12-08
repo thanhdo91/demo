@@ -8561,8 +8561,8 @@ html[xmlns] .slides {
 .img-margin-center img {
   margin-right: auto;
   margin-left: auto;
-  width: 200px !important;
-  height: 200px !important;
+  width: 250px ;
+  height: 200px ;
 }
 
 p.kad_comments_link {
